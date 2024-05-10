@@ -51,6 +51,7 @@ class VideoFilter:
             if not ret:
                 break
 
+
             filtered_frame = filter_func(frame, **kwargs)
             cv2.imshow('Filtered Video', filtered_frame)
 
